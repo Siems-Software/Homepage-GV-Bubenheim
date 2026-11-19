@@ -1,9 +1,10 @@
 # Design QA
 
-- Reference: [GV Bubenheim](https://www.gv-bubenheim.de/).
-- Source capture: the homepage at the default desktop viewport, the open choir menu, and the homepage at a 390 × 844 CSS pixel viewport. The source uses a 760 CSS pixel layout, which clips horizontally at the narrow viewport.
-- Implementation capture: unavailable. The browser could not connect to the local preview. There is no matched pair of screenshots, so the visual comparison and interactive browser checks remain open.
-- Independent verification: the 156 files and the root URL all returned HTTP 200 from a local Python HTTP server. Each response matched the SHA-256 value of the corresponding original response. The four PDF responses also passed media type and file signature checks.
-- Source gaps: four EOT fonts listed in the Xara file list returned HTTP 404. The available WOFF fonts are present. Two stylesheet names mentioned only in an inactive legacy script branch also returned HTTP 404.
+The redesign uses the Xara snapshot in commit `4661226` as its content source. The 17 original URLs remain available. `index.htm` forwards to `index.html`, which also serves as the default document for `/`.
 
-final result: blocked
+- A local Python static server returned HTTP 200 for the root, all 18 HTML files, the shared stylesheet, all 102 source images, and all four PDFs. Each image and PDF matched its tracked source file.
+- Chrome rendered all 17 content pages at 320, 390, 768, and 1440 CSS pixels without horizontal overflow or console errors. The homepage was visually reviewed at 390 and 1440 CSS pixels.
+- Browser interactions verified the legacy homepage redirect, the keyboard skip link, the rehearsal link on the homepage, the three mobile choir links, full-size image navigation, and byte-identical downloads of the old statute, draft statute, chronicle, and Tabaluga flyer.
+- Static checks verified heading and main landmarks, document nesting, image attributes, and all local URL and fragment targets. The tested text and background combinations had a minimum contrast ratio of 5.80:1.
+
+The event schedule, roles, and contact details reflect the supplied snapshot, including differences between the choir leadership page and the historical timeline.
