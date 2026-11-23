@@ -313,13 +313,27 @@ figcaption { margin-top: .55rem; color: var(--muted); font-size: .875rem; }
 .prose > :last-child, .panel > :last-child { margin-bottom: 0; }
 .prose a, address a { overflow-wrap: anywhere; }
 
+.archive-heading { margin-top: 2.25rem; }
+
+/* Satzungstext: füllt die Seitenbreite, bricht auf breiten Bildschirmen in Spalten um */
+.satzung { max-width: none; columns: 28rem; column-gap: 3.5rem; }
+.satzung h2 { break-after: avoid; font-size: 1.2rem; }
+.satzung h2:first-of-type { margin-top: 0; }
+.satzung li, .satzung p { break-inside: avoid; }
+.satzung .satzung-title, .satzung .satzung-date { column-span: all; }
+.satzung ol { margin-block: .5rem 1rem; padding-left: 1.6rem; }
+.satzung ol ol { margin-block: .5rem 0; }
+.satzung ol.alpha { list-style-type: lower-alpha; }
+.satzung ol.alpha > li::marker { content: counter(list-item, lower-alpha) ") "; }
+.satzung li + li { margin-top: .5rem; }
+.satzung-title { margin: 0 0 1.5rem; font-weight: 700; font-size: 1.15rem; line-height: 1.4; }
+.satzung-title span { display: block; margin-top: .25rem; color: var(--muted); font-weight: 500; font-size: 1rem; }
+.satzung-date { margin-top: 2rem; }
+
 .gallery, .roles, .history-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-.gallery img, .original img { border-radius: .35rem; }
+.gallery img { border-radius: .35rem; }
 .gallery img { width: 100%; }
 .gallery .document { width: auto; margin-inline: auto; }
-.original { max-width: 35rem; }
-.original a { display: inline-block; }
-.original img { border: 1px solid var(--rule); }
 .logo-image { margin-bottom: 1.5rem; }
 .portrait { margin-bottom: .8rem; border-radius: .3rem; }
 
@@ -356,7 +370,7 @@ figcaption { margin-top: .55rem; color: var(--muted); font-size: .875rem; }
 .news-article p { margin: 0 0 .85rem; }
 .news-article p:last-child { margin-bottom: 0; }
 
-.rates { width: 100%; border-collapse: collapse; }
+.rates { width: 100%; max-width: 40rem; border-collapse: collapse; }
 .rates th, .rates td {
   padding: .65rem .2rem;
   border-bottom: 1px solid var(--rule);

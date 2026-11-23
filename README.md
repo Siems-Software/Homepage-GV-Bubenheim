@@ -9,7 +9,7 @@ Every topic has its own page; `index.html` only holds the landing page and the r
 | Start | `index.html` |
 | Chöre | `choere.html`, `kleine-strolche.html`, `phonations.html`, `friends-of-music.html` |
 | Termine | `termine.html` |
-| Verein | `verein.html` (Präambel), `vorstand.html`, `chorleitung.html`, `historie.html`, `satzung.html` |
+| Verein | `verein.html` (Präambel), `vorstand.html`, `chorleitung.html`, `historie.html`, `satzung.html`, `beitraege.html` |
 | Archiv | `archiv.html`, `maennerchor.html`, `gemischter-chor.html`, `projektchor-2019.html`, `musical-projekt-2018.html`, `tabaluga.html` |
 | Impressum | `impressum.html` |
 
