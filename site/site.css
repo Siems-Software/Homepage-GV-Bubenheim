@@ -275,6 +275,8 @@ figcaption { margin-top: .55rem; color: var(--muted); font-size: .875rem; }
 .rehearsals .card-body > * { margin: 0; }
 .rehearsals h3 { grid-row: 2; }
 .rehearsals .muted { grid-column: 2; }
+.rehearsals .roles span { display: block; }
+.rehearsals .roles span + span { margin-top: .15rem; }
 .rehearsals strong { font-variant-numeric: tabular-nums; }
 .muted { color: var(--muted); }
 .band { align-items: center; }
