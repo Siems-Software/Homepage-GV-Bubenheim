@@ -31,10 +31,9 @@
       date: "2026-11-17",
       title: "Neue Chorleitung",
       text: [
-        // TODO: dd.mm.yyyy durch das Datum der Entscheidung ersetzen.
-        "Mit der Entscheidung vom dd.mm.yyyy durch die Friends of Music begleitet ab dem 17.11.2026 die neue Chorleiterin Anke Janetzka.",
+        "Ab dem 17.11.2026 begleitet uns die neue Chorleiterin Anke Janetzka.",
         "Als ausgebildete Mezzosopranistin und erfahrene Stimmbildnerin wird sie uns zukünftig mit ihrer Erfahrung und ihrer Passion zur Musik begleiten.",
-        "Wir bedanken uns weiterhin herzlich bei Rudolf Brenner, der uns nach dem Abschied von unserer vorherigen Chorleiterin Alexandra Deibel in dieser Zeit begleitet hat."
+        "Wir bedanken uns herzlich bei Rudolf Brenner, der uns nach dem Abschied von unserer vorherigen Chorleiterin Alexandra Deibel in dieser Zeit begleitet hat."
       ]
     },
     {
@@ -42,8 +41,9 @@
       // TODO: Datum ergänzen (date: "JJJJ-MM-TT"), dann erscheint es oben in der Liste.
       title: "Neues Vorstandsleitungsteam",
       text: [
-        // TODO: xx.yy.zzzz durch das Datum der Jahreshauptversammlung ersetzen.
-        "Nach Verabschiedung unserer geliebten Chorleiterin Alexandra Deibel hat auch ihr Ehemann Oliver Deibel sein Amt als 1. Vorstand niedergelegt. Hierüber wurde bereits im März aktiv gesprochen und als Resultat in der Jahreshauptversammlung vom xx.yy.zzzz ein neuer Vorstand gebildet. Neben einer Aktualisierung der Satzung wurde auch eine neue Verteilung von Rollen und Aufgaben übernommen. Wir danken Oliver Deibel für sein Engagement in den vielen Jahren sehr und freuen uns, ihn weiterhin als aktiven Sänger begrüßen zu dürfen."
+        "Nach dem Ausscheiden der Chorleiterin Alexandra Deibel hat auch Oliver Deibel sein Amt als 1. Vorstand niedergelegt. In der einberufenen Mitgliederversammlung am 20.03.2026 wurde ein neuer Vorstand gebildet.",
+        "Zusätzlich wurde die Satzung aktualisiert und die Verteilung von Rollen und Aufgaben neu geregelt.",
+        "Der Verein dankt Oliver Deibel für seine langjährige Tätigkeit im Vorstand. Er bleibt dem Chor als aktiver Sänger erhalten."
       ]
     }
   ];
