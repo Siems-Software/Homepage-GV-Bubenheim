@@ -1,9 +1,18 @@
 # Design QA
 
-- Reference: [GV Bubenheim](https://www.gv-bubenheim.de/).
-- Source capture: the homepage at the default desktop viewport, the open choir menu, and the homepage at a 390 × 844 CSS pixel viewport. The source uses a 760 CSS pixel layout, which clips horizontally at the narrow viewport.
-- Implementation capture: unavailable. The browser could not connect to the local preview. There is no matched pair of screenshots, so the visual comparison and interactive browser checks remain open.
-- Independent verification: the 156 files and the root URL all returned HTTP 200 from a local Python HTTP server. Each response matched the SHA-256 value of the corresponding original response. The four PDF responses also passed media type and file signature checks.
-- Source gaps: four EOT fonts listed in the Xara file list returned HTTP 404. The available WOFF fonts are present. Two stylesheet names mentioned only in an inactive legacy script branch also returned HTTP 404.
+The redesign uses the Xara snapshot in commit `4661226` as its content source.
 
-final result: blocked
+The event schedule, roles, and contact details reflect the supplied snapshot, including differences between the choir leadership page and the historical timeline.
+
+## Einzelseiten statt Einseiter
+
+- Jedes Thema hat eine eigene Datei (Liste im README). `index.html` enthält nur Startbereich und Singstunden; Chöre, Termine, Verein, Archiv und Impressum sind nicht mehr eingebettet.
+- Die Hauptnavigation markiert die aktuelle Seite mit `aria-current`. Verein, Chöre und Archiv haben eine Unternavigation.
+- Geprüft: Alle 18 Seiten zeigen genau eine `h1`; alle lokalen Links, Bilder, PDFs und Fragmente haben ein existierendes Ziel (Skript). Kein horizontaler Überlauf bei 320 und 1440 CSS-Pixeln.
+- Die alten `.htm`-Adressen der Xara-Fassung sind entfernt und werden nicht weitergeleitet.
+
+## Hell- und Dunkelmodus
+
+- Die Seite folgt dem Farbschema des Systems. Der Umschalter in der Kopfzeile überschreibt es; die Wahl wird im `localStorage` gemerkt und gilt auf allen Seiten. Ohne JavaScript bleibt der Umschalter ausgeblendet, das Systemschema greift trotzdem.
+- Alle Inhaltsseiten wurden in beiden Schemata bei 320, 390 und 1440 CSS-Pixeln ohne horizontalen Überlauf gerendert. Die Startseite wurde bei 375 und 1280 CSS-Pixeln in beiden Schemata angesehen.
+- Geringster gemessener Kontrast für Text: 5,61:1 (gedämpfter Text auf der Flächenfarbe im Hellmodus).
